@@ -5,7 +5,8 @@ var app = angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ui.router'
+    'ui.router',
+    'google-maps'
 
   ]);
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -15,7 +16,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
       .state('home', {
         url: '/home',
-        templateUrl: 'views/main.html'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
       })
 
       .state('/membership', {
@@ -29,4 +31,5 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: 'views/admin-orders.html',
         controller: 'SignUpForm'
       })
-  });
+});
+ 
