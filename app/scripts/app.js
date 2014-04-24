@@ -1,19 +1,20 @@
 'use strict';
 
-angular
+var app = angular
   .module('listrApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
+    'ui.router'
+
+  ]);
+app.config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/home');
+
+    $stateProvider
+
+      .state('home', {
+        url: '/home',
+        templateUrl: 'views/main.html'
       });
   });
