@@ -16,5 +16,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       .state('home', {
         url: '/home',
         templateUrl: 'views/main.html'
-      });
+      })
+
+      .state('/membership', {
+        url: '/membership',
+        templateUrl: 'views/membership.html',
+        controller: 'SignUpForm'
+      })
   });

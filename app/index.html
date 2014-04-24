@@ -16,12 +16,15 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/form.css">
     <!-- endbuild -->
   </head>
   <body ng-app="listrApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <div ng-include src="'/views/global/navbar.html'"></div>
 
     <!-- Add your site or application content here -->
     <div ui-view=""></div>
@@ -39,7 +42,7 @@
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <script src="bower_dcomponents/json3/lib/json3.min.js"></script>
     <![endif]-->
 
     <!-- build:js scripts/vendor.js -->
@@ -57,7 +60,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/signup.js"></script>
+
+
+   
         <!-- endbuild -->
+
 </body>
 </html>
