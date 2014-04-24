@@ -1,8 +1,13 @@
 <section class="section listr-blue-bg">
 <h1 class="text-center"> SIGNUP </h1>
 
+<div ng-repeat="(infoId, info) in infos">
+  {{form.first_name}}
+  <a ng-click="fulfillForm($index)">Done</a>
+  <a ng-click="removeForm($index)">Clear</a>
+</div>
 Form Data: {{ infos }} <br>
-
+Fulfill Data: {{ complete }} <br>
 Form: {{ form }}
 
 

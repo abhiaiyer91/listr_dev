@@ -23,4 +23,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: 'views/membership.html',
         controller: 'SignUpForm'
       })
+
+      .state('/admin', {
+        url: '/admin',
+        templateUrl: 'views/admin-orders.html',
+        controller: 'SignUpForm'
+      })
   });
