@@ -24,7 +24,7 @@ app.factory('DataService', function() {
     // https://manage.stripe.com/register
     myCart.addCheckoutParameters("Stripe", "pk_test_qvGXLElB2OEGavnGnqp1P5Ln",
         {
-            chargeurl: "https://localhost:1234/processStripe.aspx"
+            chargeurl: "https://localhost:9000/processStripe.aspx"
         }
     );
 
