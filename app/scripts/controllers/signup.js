@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('SignUpForm', function ($scope, Form){
+app.controller('SignUpForm', function ($scope){
 	$scope.infos = [];
 
 	$scope.complete = [];

@@ -1,51 +1,330 @@
-<div class="google-maps"><google-map center="map.center" zoom="map.zoom" options="map.settings"><div ng-repeat=""><marker coords='marks.coords'></marker></div></google-map></div>
-<div class="header">
-  <div class="navbar listr-grey-bg navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand white" href="#">listr</a>
+<div class="google-maps"><google-map center="map.center" zoom="map.zoom" options="map.settings"><marker coords='marks.coords'></marker></google-map></div>
+
+
+    <section id="info">
+       <!--/////////// Info section alternates with white and gray backgrounds. Let's start with a white! //////////-->
+        <div class="info-section-white">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 pull-right gallery-popup">
+                        <a href="http://www.placehold.it/640x480"><img src="/images/contact-bg_anthro.png" alt="placeholder image" title="placeholder image" class="img-responsive"></a>
+                    </div> 
+
+                    <div class="col-md-6 pull-left">
+                        <h3>What is listr you ask?</h3>
+
+                        <p class="lead">listr is exclusive access to your local nightlife</p>
+
+                        <p>Here is some dummy text. You can also use That one showed on top, but you can have it on the? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, tempore blanditiis magni dolorum architecto omnis exercitationem nisi? Iure, facere, nemo quos nobis cum ipsam quam similique sequi eum neque minima.</p>
+
+
+                        <a href="#" class="btn btn-primary btn-hg">Tell Me More!</a>
+                        <a href="http://www.themeforest.net/user/simonswiss?ref=simonswiss" class="btn btn-danger btn-hg inline">Buy Now!</a>
+                    </div> 
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </div><!-- /info-section-white -->
+        </section>
+
+  <!--/////////////////////////////////////// FEATURES SECTION ////////////////////////////////////////-->
+
+
+
+    <section id="works">
+            <h1 class="text-center white shadow">How it Works</h1><br>
+            <div class="row">
+                
+                <!-- Feature Item 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/pc.svg" alt="" title="" />
+                    </div>
+                    <h4>Sign Up for a listr Account</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <!-- Feature Item 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/card.svg" alt="" title="" />
+                    </div>
+                    <h4>Buy a Membership Card</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <!-- Feature Item 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/money.svg" alt="" title="" />
+                    </div>
+                    <h4>Save Money</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+
+    <!--/////////////////////////////////////// end FEATURES SECTION ////////////////////////////////////////-->
+
+   <!--/////////////////////////////////////// PRICING SECTION ////////////////////////////////////////-->
+    <section id="pricing">
+
+        <div class="container">
+
+            <header>
+                <h1>Prices that go Booom!</h1>
+                <p class="lead">Select from our ranges of prices - you won't be disappointed!</p>
+            </header>
+
+            <div class="row">  
+
+                <div class="col-md-4">
+                    <div class="pricing-box">
+                        <div class="pricing-heading">
+                            Little Bang
+                        </div><!-- end pricing-heading -->
+                        <div class="pricing-price">
+                            $69.90
+                        </div><!-- end pricing-price -->
+                        <div class="pricing-description">
+                            small fish package
+                        </div><!-- end pricing-description -->
+                        <ul class="pricing-list">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>How about one more?</li>
+                            <li>You can add</li>
+                            <li>unlimited lines</li>
+                        </ul><!-- end pricing-list -->
+                        <div class="pricing-cta">
+                            <a ui-sref="buynow" class="btn btn-large btn-pricing">Buy Now</a>
+                        </div><!-- end pricing-cta -->
+                    </div><!-- end pricing-box -->
+                </div><!-- end col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="pricing-box popular">
+                        <div class="pricing-heading">
+                            Solid Bang
+                        </div><!-- end pricing-heading -->
+                        <div class="pricing-price">
+                            $99.90
+                        </div><!-- end pricing-price -->
+                        <div class="pricing-description">
+                            make an impact
+                        </div><!-- end pricing-description -->
+                        <ul class="pricing-list">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>How about one more?</li>
+                            <li>You can add</li>
+                            <li>unlimited lines</li>
+                        </ul><!-- end pricing-list -->
+                        <div class="pricing-cta">
+                            <a ui-sref="buynow" class="btn btn-large btn-pricing-popular">Buy Now</a>
+                        </div><!-- end pricing-cta -->
+                    </div><!-- end pricing-box -->
+                </div><!-- end col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="pricing-box">
+                        <div class="pricing-heading">
+                            Maxi Bang
+                        </div><!-- end pricing-heading -->
+                        <div class="pricing-price">
+                            $139.90
+                        </div><!-- end pricing-price -->
+                        <div class="pricing-description">
+                            blast your audience!
+                        </div><!-- end pricing-description -->
+                        <ul class="pricing-list">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>How about one more?</li>
+                            <li>You can add</li>
+                            <li>unlimited lines</li>
+                        </ul><!-- end pricing-list -->
+                        <div class="pricing-cta">
+                            <a ui-sref="buynow" class="btn btn-large btn-pricing">Buy Now</a>
+                        </div><!-- end pricing-cta -->
+                    </div><!-- end pricing-box -->
+                </div><!-- end col-md-4 -->
+        
+            </div><!-- end row -->
+        </div><!-- end container -->
+
+    </section>
+
+    <!--/////////////////////////////////////// end PRICING SECTION ////////////////////////////////////////-->
+
+   <!--/////////////////////////////////////// FAQ SECTION ////////////////////////////////////////-->
+
+    <section id="faq">
+
+        <div class="container">
+
+            <header>
+                <h1>F.A.Q.</h1>
+                <p class="lead">You have a question? Someone else might have had the exact same one. Let's find out!</p>
+            </header>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <!--////////// Accordion Toggle //////////-->
+                    <div class="panel-group" id="accordion">
+                     
+                        <!-- PANEL 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Is this template compatible with Bootstrap 3?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Absolutely! As shown with a few examples within this demo, you can use all the bootstrap goodies such as carousels, modal windows, tooltips, tabs, accordions, form elements...</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- PANEL 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    Are there more icons available?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Hell yeah! This template is built on the awesome <a href="http://designmodo.com/flat/" target="_blank">Flat UI Pro kit by Designmodo</a>.<br>All the icons & goodies you can see on the kit presentation can be used in Booom!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PANEL 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    Can you resize the illustrations?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Those gorgeous illustrations are available in SVG format (vector), which means they're completely scaleable without any quality loss.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PANEL 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    Does the template hack into Bootsrap core files?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Nooooo. Yeww, no way! The Bootsrap files are totally untouched - all the customizations are done on extra css (or LESS) files, so you can upgrade bootstrap versions wihout any modification losses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!--////////// end of Accordion Toggle //////////-->              
+
+                    <div class="alert">
+                        
+                        <p class="lead">Our Contact Details</p>
+                        <div class="row">
+                          
+                          <div class="col-md-4 col-xs-6 text-left">
+                            <strong>Address</strong>
+                          </div>
+                          
+                          <div class="col-md-8 col-xs-6">
+                            <address>
+                              144 Pitt Street, Byron Bay, Australia<br>
+                            </address>
+                          </div>
+
+                        </div><!-- /row -->
+
+                        <div class="row">
+                          
+                          <div class="col-md-4 col-xs-6 text-left">
+                            <strong>Phone Number</strong>
+                          </div>
+                          
+                          <div class="col-md-8 col-xs-6">
+                            <address>
+                              +61 (0) 243 888 888<br>
+                            </address>
+                          </div>
+
+                        </div><!-- /row -->
+
+                        <div class="row">
+                          
+                          <div class="col-md-4 col-xs-6 text-left">
+                            <strong>Mobile Number</strong>
+                          </div>
+                          
+                          <div class="col-md-8 col-xs-6">
+                            <address>
+                              +61 (0) 424 999 999<br>
+                            </address>
+                          </div>
+
+                        </div><!-- /row -->
+
+                    </div><!-- /alert -->
+
+                </div><!-- /col-md-6 -->
+
+                <div class="col-md-6">
+
+                    <div class="row contact-intro">
+                        <div class="col-md-3 text-right"><img src="images/icons/support.svg" alt="" title="" /></div>
+                        <div class="col-md-9"><p class="lead">Didn't find what you were looking for? Shoot us a line!</p></div>                        
+                    </div>
+
+                    <!--////////// CONTACT FORM //////////-->
+                    <form id="contact-form">
+                        <input type="text" id="name" name="name" class="form-control input-hg" placeholder="Your name..." />
+                        <input type="text" id="email" name="email" class="form-control input-hg" placeholder="Your e-mail address..." />
+                        <textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn-inverse btn-hg btn-block" name="submit">Send</button>
+                    </form>
+
+                     <div id="contact-error"></div>
+                    <!--////////// end CONTACT FORM ///////////-->
+
+                </div><!-- /col-md-6-->
+                
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-           <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Sign In</a></li>
-            <li><a href="#contact">Sign Up</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-</div>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+    </section>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+    <!--/////////////////////////////////////// end FAQ SECTION ////////////////////////////////////////-->
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
 
-<div class="footer">
-  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-</div>

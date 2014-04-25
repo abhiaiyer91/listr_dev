@@ -6,7 +6,9 @@ var app = angular
     'ngResource',
     'ngSanitize',
     'ui.router',
-    'google-maps'
+    'ngRoute',
+    'google-maps',
+    'firebase'
 
   ]);
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -19,17 +21,39 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-
-      .state('/membership', {
+      .state('register', {
+        url: '/signup',
+        templateUrl: 'views/signup.html',
+        controller: 'AuthCtrl'
+      })
+      .state('login', {
+        url: '/login',
+        templateUrl: 'views/login.html',
+        controller: 'AuthCtrl'
+      })
+      .state('membership', {
         url: '/membership',
         templateUrl: 'views/membership.html',
-        controller: 'SignUpForm'
+        controller: 'DataCtrl'
+      })
+      .state('buynow', {
+        url: '/buynow',
+        templateUrl: 'views/store.html',
+        controller: 'StoreCtrl'
+      })      
+      .state('products', {
+        url: '/products/:productSku',
+        templateUrl: 'views/product.html',
+        controller: 'StoreCtrl'
       })
 
-      .state('/admin', {
-        url: '/admin',
-        templateUrl: 'views/admin-orders.html',
-        controller: 'SignUpForm'
+      .state('cart', {
+        url: '/cart',
+        templateUrl:'views/shoppingCart.html',
+        controller: 'StoreCtrl'
       })
+
 });
+
+app.constant('FIREBASE_URL', 'https://listr-fire.firebaseio.com/')
  
