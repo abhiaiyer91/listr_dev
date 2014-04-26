@@ -46,11 +46,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: 'views/product.html',
         controller: 'StoreCtrl'
       })
-
       .state('cart', {
         url: '/cart',
         templateUrl:'views/shoppingCart.html',
         controller: 'StoreCtrl'
+      })
+      .state('explore', {
+        url: '/explore',
+        templateUrl: 'views/explore.html',
+        controller: 'ExploreCtrl'
       })
 
 });
